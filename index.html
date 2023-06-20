@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Encriptador</title>
+</head>
+<body>
+  
+  <header>
+    <div class="logo">
+      <img src="/imagenes/Logo.svg" alt="Logo Alura">
+    </div>
+    <div class="titulo-principal">
+      <h1 class="titulo">Encriptador</h1>
+    </div>
+  </header>
+  <main class="cuerpo">
+    <section class="seccion1">
+      <div class="contenedor1">      
+        <textarea name="textarea" id="area-texto" cols="40" rows="5" placeholder="Ingrese el texto aqui" ></textarea>      
+        <p><img src="/imagenes/icons8-información-16.png" alt="informacion icono"> Solo minusculas, sin acentos ni caracteres especiales</p>
+        <div class="botones">
+            <button id="btn1" class="btn1" type="button"> <span class="encriptar">Encriptar</span></button>
+            <button id="btn2" class="btn2" type="button"><span class="desencriptar">Desencriptar</span></a></button>
+          </div>
+      </div>
+    </section>
+    <section class="seccion2">
+      <div class="contenedor2">
+        <img src="/imagenes/Muñeco.svg" alt="Imagen Muñeco" id="imagenmuneco">
+        <p><strong>Ningun mensaje fue encontrado.</strong></p>
+        
+        <textarea name="textarea2" id="area-texto2" cols="20" rows="5" placeholder="ingresa el texto que desees encriptar o desencriptar."></textarea>
+        <button onclick="copiarTexto()" id="btn3" class="btn3" type="button"><span class="copiar">Copiar</span></a></button>
+        
+      </div>
+    </section>
+
+  </main>
+  <br>
+  <footer class="pie-pagina">
+    <div class="pie">
+      <p><small>© Creado por Jhon Gutierrez   <a href="https://github.com/jhonf1992" class="link-git" target="_blank"><i style="font-size:20px" class="fa">&#xf09b;</i> </a><a class="linkedin" href="https://www.linkedin.com/in/jhon-fredy-gutierrez-carvajal/" target="_blank"><img src="/imagenes/linkedin-in.svg" alt="linkedin" class="linkedin"></a></small> </p>
+    </div>
+  </footer>
+  <script src="/index.js"></script>    
+</body>
+</html>

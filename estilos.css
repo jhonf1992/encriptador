@@ -1,0 +1,153 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #e3af05;
+    font-size: 18px;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecera img{
+    margin: 20px;
+    width: 20%;
+    height: auto;
+
+}
+.titulo{
+    display: flex;
+    flex-grow: 3;
+    justify-content: left;
+    margin-top: 50px;
+    font-size: 45px;
+    margin: 20px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.principal{
+    display: flex;
+    width: 95%;
+    height: auto;
+    justify-content: space-around;
+}
+
+.bloque1{
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    height: 600px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.textIn{
+    border-style: none;
+    background:none;
+    text-align: center;
+
+}
+.bloque1 input{
+    width: 60%;
+    height: 45%;
+}
+::placeholder{
+    color: #0A3871;
+    font-size: 18px;
+}
+
+.botones{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+.botones button{
+    width: 36%;
+    height: 4.5vw;
+    border-radius: 20px;
+}
+
+#botonEncriptado{
+    background: #0A3871;
+    color: #F3F5FC;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px #03244c;
+    width: 40%;
+    
+}
+#botonEncriptado:hover{
+    background: #234c7d;
+    transition: 300ms;
+}
+
+#botonDesencriptado{
+    background: #D8DFE8;
+    color: #5e5e60;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px #454647;
+    width: 48%;
+
+    
+}
+#botonDesencriptado:hover{
+    background: #bdbfc1;
+    transition: 300ms;
+}
+
+.bloque2{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    height: 600px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.muneco{
+    width: 65%;
+    height: 60%;
+}
+
+.bloque2 p{
+    font-weight: 500;
+    text-align: center;
+    font-size: 20px;
+}
+
+#textoSalida{
+    border-style: none;
+    text-align: center;
+    width: 50%;
+    height: auto;
+}
+
+#botonCopiar{
+    background: #D8DFE8;
+    color: #5e5e60;
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px #454647;
+    border-radius: 20px;
+    width: 40%;
+
+}
+#botonCopiar:hover{
+    background: #bdbfc1;
+    transition: 300ms;
+}
+
