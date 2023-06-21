@@ -19,6 +19,7 @@
     <div class="principal">
         <div class="bloque1">
             <input type="text" id="textoEntrada" class="textIn" placeholder="Ingrese el texto aquí...">
+            <p><img src="/imagenes/icons8-información-16.png" alt="informacion icono"> Solo minusculas, sin acentos ni caracteres especiales</p>
             <div class="botones">
                 <button type="button" id="botonEncriptado">Encriptar</button>
                 <button type="button" id="botonDesencriptado">Desencriptar</button>
@@ -26,8 +27,8 @@
             
         </div>
         <div class="bloque2">
-            <img src="/imagenes/Muñeco.svg" alt="muneco" class="muneco">
-            <p>Ningun mensaje fue encontrado.</p>
+            <img src="/imagenes/Muñeco.svg" alt="muneco" class="muneco" id="muneco">
+            <p id="avisoSalida">Ningun mensaje fue encontrado.</p>
             <textarea name="resultado" id="textoSalida" cols="30" rows="10" class="textOut" placeholder="Texto desencriptado."></textarea>
             <button type="button" id="botonCopiar">Copiar</button>
         </div>
@@ -35,6 +36,11 @@
         
         
     </div>
+    <footer class="pie-pagina">
+        <div class="pie">
+            <p><small>© Creado por Jhon Gutierrez   <a href="https://github.com/jhonf1992" class="link-git" target="_blank"><img src="/imagenes/github.svg" alt="github" class="github"> </a><a class="linkedin" href="https://www.linkedin.com/in/jhon-fredy-gutierrez-carvajal/" target="_blank"><img src="/imagenes/linkedin-in.svg" alt="linkedin" class="linkedin"></a></small>  </p>
+        </div>
+    </footer>
 </body>
 <script src="script.js"></script>
 </html>

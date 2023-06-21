@@ -7,22 +7,35 @@ function encriptar(){
     var textoEncriptado = textoEncriptado.replace(/u/img,"ufat");
 
     document.getElementById("textoSalida").innerHTML=textoEncriptado;
+
+    
+    document.getElementById("muneco").style.display = "none";
+
+    document.getElementById("botonCopiar").style.visibility = "visible";
+
+    document.getElementById("avisoSalida").innerHTML="";
+
+
 }
-let btn = document.querySelector("#botonEncriptado");
+var btn = document.querySelector("#botonEncriptado");
 btn.onclick = encriptar;
 
 function desencriptar(){
-    var frase = document.getElementById("textoSalida").value.toLowerCase();
+    var frase = document.getElementById("textoEntrada").value.toLowerCase();
     var textoEncriptado = frase.replace(/enter/img,"e");
     var textoEncriptado = textoEncriptado.replace(/ober/img,"o");
     var textoEncriptado = textoEncriptado.replace(/imes/img,"i");
     var textoEncriptado = textoEncriptado.replace(/ai/img,"a");
     var textoEncriptado = textoEncriptado.replace(/ufat/img,"u");
 
+
+
     document.getElementById("textoSalida").innerHTML=textoEncriptado;
+    document.getElementById("avisoSalida").innerHTML="";
+    document.getElementById("muneco").style.display = "none";
 }
 
-let btn2 = document.querySelector("#botonDesencriptado");
+var btn2 = document.querySelector("#botonDesencriptado");
 btn2.onclick = desencriptar; 
 
 function copiar(){
@@ -31,5 +44,7 @@ function copiar(){
     document.execCommand("copy");
 }
 
-let btn3 = document.querySelector("#botonCopiar");
+var btn3 = document.querySelector("#botonCopiar");
 btn3.onclick = copiar;
+
+
